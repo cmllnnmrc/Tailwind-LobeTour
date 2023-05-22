@@ -832,7 +832,7 @@ video {
 
 @media (min-width: 1080px) {
   .banner__text p {
-    width: 40%;
+    width: 50%;
     font-size: 2rem;
   }
 
@@ -894,7 +894,7 @@ video {
 
 @media (min-width: 1080px) {
   .banner__btn h1 {
-    width: 40%;
+    width: 50%;
     font-size: 5rem;
   }
 }
