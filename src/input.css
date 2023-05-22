@@ -40,7 +40,7 @@
     }
 
     .header__actions.open{
-        @apply max-h-[50rem] transition-all;
+        @apply max-h-[50rem] transition ease-in-out duration-[.5s] ;
     }
 
     .header__actions ul{
@@ -120,7 +120,7 @@
     }
 
     .banner__img img{
-        @apply rounded-[2rem] my-[2rem] hover:scale-[1.05] transition-all hover:shadow-[0_100px_140px_-50px_rgba(0,0,0,.25),0_0_20px_0_rgba(0,0,0,.03)] lg:my-[5rem];
+        @apply rounded-[2rem] my-[2rem] hover:scale-[1.05] transition ease-in-out duration-[.5s] hover:shadow-[0_100px_140px_-50px_rgba(0,0,0,.25),0_0_20px_0_rgba(0,0,0,.03)] lg:my-[5rem];
     }
 
     .banner__btn{
@@ -141,11 +141,11 @@
     }
 
     .footer__content{
-        @apply grid grid-cols-2 gap-[3rem] pt-[3rem] lg:grid lg:grid-cols-4;
+        @apply grid grid-cols-1 gap-[3rem] pt-[3rem] lg:grid lg:grid-cols-4;
     }
 
     .footer__item h5{
-        @apply flex items-center justify-between font-[600] text-[1.1rem];
+        @apply flex items-center justify-between font-[600] text-[1.1rem] p-1;
     }
 
     .footer__item span{
@@ -157,11 +157,11 @@
     }
 
     .footer__item i.open{
-        @apply transition ease-linear duration-300 hover:rotate-[180deg];
+        @apply transition ease-linear duration-300 rotate-[180deg];
     }
 
     .footer__item ul{
-        @apply max-h-0 overflow-hidden transition ease-linear duration-300 lg:max-h-[15rem] lg:p-[1rem];
+        @apply pt-[1rem] max-h-0 overflow-hidden transition ease-linear duration-300 lg:max-h-[15rem];
     }
 
     .footer__item ul.open{
@@ -172,7 +172,7 @@
         @apply mb-[1.5rem] hover:scale-[1.05] transition-[1.05];
     }
     .footer__item ul li a{
-        @apply lg:text-[1.2rem];
+        @apply lg:text-[1.2rem] p-1;
     }
 
     .footer__social ul{
