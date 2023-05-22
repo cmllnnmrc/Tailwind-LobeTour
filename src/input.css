@@ -169,7 +169,7 @@
     }
 
     .footer__item ul li{
-        @apply mb-[1.5rem] hover:scale-[1.05] transition-[1.05];
+        @apply mb-[1.5rem] hover:scale- transition-[1.05];
     }
     .footer__item ul li a{
         @apply lg:text-[1.2rem];
