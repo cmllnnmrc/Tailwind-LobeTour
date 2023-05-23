@@ -1210,6 +1210,7 @@ video {
 
 .faq__ques h4 {
   display: flex;
+  cursor: pointer;
   align-items: center;
   justify-content: space-between;
   font-weight: 600;
@@ -1345,12 +1346,11 @@ video {
 
 @media (min-width: 1080px) {
   .faq__tab__content {
-    position: absolute;
-    opacity: 0;
+    display: none;
   }
 
   .faq__tab__content.active {
-    opacity: 1;
+    display: block;
   }
 }
 

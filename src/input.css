@@ -260,7 +260,7 @@
     }
 
     .faq__ques h4{
-        @apply flex items-center justify-between font-[600];
+        @apply flex items-center justify-between font-[600] cursor-pointer;
     }
 
     .faq__ques span{
@@ -320,11 +320,11 @@
     }
 
     .faq__tab__content{
-        @apply lg:absolute lg:opacity-0;
+        @apply lg:hidden;
     }
 
     .faq__tab__content.active{
-        @apply lg:opacity-100;
+        @apply lg:block;
     }
 
     .faq__btn{
