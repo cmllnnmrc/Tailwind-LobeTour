@@ -11,7 +11,7 @@
      /** ---------- HEADER ---------- */
 
     .header{
-        @apply fixed z-[1] w-full bg-light bg-opacity-95;
+        @apply fixed z-[1] w-full bg-light bg-opacity-70 backdrop-blur-xl;
     }
 
     .header.open{
@@ -367,7 +367,7 @@
     /** ---------- EXAMPLES ---------- */
 
     .example .container{
-        @apply lg:max-w-[80rem]
+        @apply lg:max-w-[80rem];
     }
 
     .example__title{
@@ -390,7 +390,7 @@
         @apply lg:grid grid-cols-2 gap-x-[3rem]
     }
     .example__card{
-        @apply rounded-[1.5rem] max-w-[93%] max-h-[100%] mb-[5rem] shadow-[0_100px_140px_-50px_rgba(0,0,0,.25),0_0_20px_0_rgba(0,0,0,.03)];
+        @apply rounded-[1.5rem] max-h-[100%] mb-[5rem] shadow-[0_100px_140px_-50px_rgba(0,0,0,.25),0_0_20px_0_rgba(0,0,0,.03)] lg:max-w-[93%];
     }
 
     .example__card video{
@@ -407,5 +407,56 @@
 
     .card__text p{
         @apply my-[.5rem] leading-[2rem] text-[1.1rem] lg:text-[1.3rem];
+    }
+
+
+    /** ---------- BLOG ---------- */
+
+    .blog .container{
+        @apply lg:max-w-[80rem];
+    }
+
+    .blog__title{
+        @apply text-center my-[7rem] text-dark;
+    }
+
+    .blog__title h1{
+        @apply text-[2.5rem] font-[700] lg:text-[5rem];
+    }
+
+    .blog__title span{
+        @apply text-primary;
+    }
+
+    .blog__title p{
+        @apply px-[1rem] text-[1.1rem] lg:text-[2rem] lg:px-[10rem];
+    }
+
+    .blog__wrapper{
+        @apply lg:grid grid-cols-2 gap-x-[3rem];
+    }
+
+    .blog__card{
+        @apply rounded-[1.5rem] max-h-[100%] mb-[3rem] shadow-[0_100px_140px_-50px_rgba(0,0,0,.25),0_0_20px_0_rgba(0,0,0,.03)] hover:scale-[1.05] transition-all lg:max-w-[93%];
+    }
+
+    .blog__card img{
+        @apply rounded-tl-[1.5rem] rounded-tr-[1.5rem];
+    }
+
+    .blog__text{
+        @apply p-[1.5rem] text-dark;
+    }
+
+    .blog__text h5{
+        @apply text-[1.3rem] font-[700] lg:text-[1.5rem];
+    }
+
+    .blog__text p{
+        @apply my-[.5rem] leading-[2rem] text-[1.1rem] lg:text-[1.3rem];
+    }
+
+    .blog__footer p{
+        @apply mt-[1rem] text-[1.1rem] font-[600] text-[#989898] lg:text-[1.2rem];
     }
 }
